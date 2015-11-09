@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Watermelon</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scan">Scan</string>
+    <string name="maps">Maps</string>
+    <string name="help">Help</string>
+</resources>
