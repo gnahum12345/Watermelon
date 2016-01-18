@@ -183,18 +183,17 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
     //return 0-255
     public int getRed(long color){
-        int red = (int) (((color & 0xFF0000) >>16) & 0xFF);
-        return red;
+        return  ((int) (((color & 0xFF0000) >>16) & 0xFF));
+
     }
     //return 0-255
     public int getGreen(long color){
-        int green = (int) (((color & 0xFF00) >> 8) & 0xFF);
-        return green;
+        return  ((int) (((color & 0xFF00) >> 8) & 0xFF));
     }
     //return 0-255
     public int getBlue(long color){
-        int blue = (int) (color & 0xFF);
-        return blue;
+        return  ((int) (color & 0xFF));
+
     }
 
     public void captureImage(View v) throws IOException {
@@ -383,6 +382,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        menu.findItem(R.id.scan).setVisible(false);
         return true;
     }
 

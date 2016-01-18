@@ -5,7 +5,7 @@
         android:id="@+id/scan"
         android:title="@string/scan"
         android:orderInCategory="100"
-        android:showAsAction="never" />
+        android:showAsAction="always" />
     <!--
     <item
         android:id="@+id/maps"
@@ -18,5 +18,5 @@
         android:id="@+id/help"
         android:title="Help"
         android:orderInCategory="0"
-        android:showAsAction="never"/>
+        android:showAsAction="always" />
 </menu>
